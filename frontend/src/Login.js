@@ -9,8 +9,9 @@ function Login({ setToken }) {
   const handleSubmit = async (e) => {
     e.preventDefault(); // Prevent default form submission
     try {
-      // Djoser's token login endpoint only needs username and password
-      const response = await axios.post('http://127.0.0.1:8000/api/auth/token/login/', {
+      // Use the environment variable for the URL
+      const apiUrl = process.env.REACT_APP_API_URL
+      const response = await axios.post(`${apiUrl}/api/auth/token/login/`, {
         username: username,
         password: password
       });
