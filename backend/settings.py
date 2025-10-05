@@ -28,7 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     'fintech-app-frontend.vercel.app',
     'fintech-app-backend.vercel.app',
-    '.vercel.app'
+    'fintech-app-wev9.vercel.app',
 ]
 
 
