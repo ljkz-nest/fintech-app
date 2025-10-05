@@ -25,7 +25,11 @@ SECRET_KEY = 'django-insecure-g!m^g6+8_=&co+bfw$52@y#5q$k3zc41!ydg!2b@15)f5ydtc=
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'fintech-app-frontend.vercel.app',
+    'fintech-app-backend.vercel.app',
+    '.vercel.app'
+]
 
 
 # Application definition
@@ -136,7 +140,7 @@ REST_FRAMEWORK = {
 }
 # At the bottom of settings.py
 CORS_ALLOWED_ORIGINS = [
-    'http://localhost:3000',
+    'http://fintech-app-frontend.vercel.app',
 ]
 # backend/settings.py
 # ... (at the very bottom of the file)
