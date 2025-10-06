@@ -20,11 +20,11 @@ function Navbar({ onLoginClick }) {
 
         {/* Center Section (Column 2) */}
         <Box sx={{ display: 'flex', justifyContent: 'center', gap: 4, justifySelf: 'center' }}>
-          <Link to="opportunities" smooth={true} duration={500} style={{ cursor: 'pointer', color: '#555' }}>
-            Opportunities
-          </Link>
           <Link to="how-it-works" smooth={true} duration={500} style={{ cursor: 'pointer', color: '#555' }}>
             How It Works
+          </Link>
+          <Link to="opportunities" smooth={true} duration={500} style={{ cursor: 'pointer', color: '#555' }}>
+            Opportunities
           </Link>
           <Link to="impact" smooth={true} duration={500} style={{ cursor: 'pointer', color: '#555' }}>
             Our Impact
